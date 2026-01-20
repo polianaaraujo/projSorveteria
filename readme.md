@@ -19,4 +19,8 @@ Funcionalidades:
 Autora: 
 **Poliana de Araújo Alves**
 
-Projeto desenvolvido para fins educacionais.
+[Clique aqui para ver o projeto](https://polianaaraujo.github.io/projSorveteria/)
+
+
+Projeto ainda em estágio de desenvolvimento.
+Desenvolvido exclusivamente para fins educacionais.
