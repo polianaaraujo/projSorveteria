@@ -1,0 +1,309 @@
+html
+{
+    font-size: 10px;
+}
+
+
+body 
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+
+    background-color:  #391c5d;
+    color: #eeeeaf;
+    
+    
+
+    
+}
+header
+{
+    padding: 7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    background-color:#391c5d;
+    position: sticky;
+    top: 0;
+
+}
+header .logo
+{
+    display: flex;
+    margin-left: 10px;
+}
+header img
+{
+    width: 5.7rem;
+    height: 5.7rem;
+    margin: 7px 0px;    
+}
+header .logo h1
+{
+    display: inline-block;
+    margin: 10px;
+    font-size: 3.4rem;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+header nav
+{
+    justify-items: right;
+}
+header nav ul
+{
+    list-style-type: none;
+    padding: 0px;
+}
+header nav li
+{
+    display: inline-block;
+    margin: 0px 1vw;
+}
+a
+{
+    color: #eeeeaf;
+    font-size: 2.2rem;
+    text-decoration: none;
+    margin: 0 2vw;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+/* fim header */
+
+
+/*inicio home*/
+
+#home
+{
+
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    scroll-margin-top: 120px;
+
+}
+#home h2
+{
+    font-size: 5vw;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 30%;
+    padding: 5vw 0;
+    color:rgb(249, 232, 122);
+    align-self: start;
+}
+#home img
+{
+    width: 30vw;
+    height: 24vw;
+    margin-top: -30px;
+    rotate: 15deg;
+
+}
+
+/*fim home*/
+
+
+
+/* inicio main*/
+main
+{
+    text-align: center;
+    margin: 40px 0;
+}
+
+main h3
+{
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #ffe66d;
+    margin-top: 70px ;
+}
+main h4
+{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 8px 0;
+}
+main p
+{
+    font-size:1.25rem;
+    opacity: 0.85;
+    margin-bottom: 16px;
+}
+.price {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffe66d;
+    margin: 8px 0;
+}
+main button
+{
+    background: linear-gradient(135deg, #ffe66d, #ffd23f);
+    color: #3f1d63;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#destaques, #acai , #sorvete, #milkshake
+{
+    scroll-margin-top: 90px;
+}
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.title p {
+    font-size: 1.6rem;
+}
+h3::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffe66d;
+    margin: 16px auto 0;
+    border-radius: 999px;
+}
+.produtos
+{
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.caixa-prod
+{
+    background-color: #3f1d63;
+    border-radius: 20px;
+    padding: 16px;
+    width: 250px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.147);
+
+}
+.caixa-prod img
+{
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+/* footer */
+
+footer
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p
+{
+    display: inline;
+    color:#eeeeaf;
+    font-size: 1.4rem;
+    margin:10px ;
+    font-weight: 600;
+}
+footer img
+{
+    width: 25px;
+    height: 25px;
+}
+
+@media(max-width: 768px)
+{
+    html 
+    {
+        font-size: 8px;
+    }
+    header
+    {
+        display: block;
+    }
+
+    header nav
+    {
+        justify-items: center;
+    }
+
+    header nav li
+    {
+        margin: 0 2vw;
+
+    }
+    
+    #home h2
+    {
+        font-size: 7vw;
+        width: 40%;
+    }
+    #home img
+    {
+        width: 38vw;
+        height: 32vw;
+    }
+    .produtos
+    {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 390px)
+{
+    html 
+    {
+        font-size: 7px;
+    }
+    #home
+    {
+        display: block;
+        justify-items: center;
+        text-align: center;
+        margin: 30px 0;
+        
+    }
+    #home h2
+    {
+        font-size: 10vw;
+        margin: 0;
+        width: 60%;
+        padding-top: 0;
+    }
+    #home img
+    {
+        width: 48vw;
+        height: 40vw;
+        margin-left: -30px;
+        margin-top: 30px;
+
+
+    }
+}
