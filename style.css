@@ -1,0 +1,473 @@
+body 
+{
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+
+    background-color:  #391c5d;
+    color:#f1f1a6;
+    
+}
+header
+{
+    padding: 0.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    align-content: center;
+    background-color:#391c5d;
+    position: sticky;
+    top: 0;
+
+}
+header .logo
+{
+    display: flex;
+    margin-left: 0.9vw;
+    align-items: center;
+    justify-content: left;
+}
+header img
+{
+    width: 3.37rem;
+    margin: 0.4rem 0;    
+}
+header .logo h1
+{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0.65rem;
+    font-size: 1.87rem;
+    
+}
+#menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.7rem;
+    color: #f1f1a6;
+    cursor: pointer;
+}
+header nav
+{
+    justify-items: right;
+    margin-right: 0.9vw;
+}
+header nav ul
+{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    gap: 5vw;
+}
+
+header a
+{
+    color: #f1f1a6;
+    font-size: 1.14rem;
+    text-decoration: none;
+    margin-right: 1.8vw;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    opacity: 0.9;
+
+    letter-spacing: 1px;
+
+}
+header a:hover
+{
+    color:#ffd23f;
+    transition: 0.3s;
+}
+
+/* fim header */
+
+
+/*inicio home*/
+
+#home
+{
+
+    padding: 9vw 0;
+    display: grid;
+    grid-template-columns: 27rem auto;
+    justify-content: center;
+    gap: 15vw;
+    scroll-margin-top: 120px;
+
+}
+#home .img
+{
+
+    align-content: center;
+    justify-items: center;
+}
+#home h2
+{
+    font-size: 4.3rem;
+    max-width:100%;
+    color:rgb(249, 232, 122);
+    align-self: start;
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+
+}
+#home h2 .acai
+{
+    font-size: 4.8rem;
+}
+#home p
+{
+    max-width: 100%;
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+#home a
+{
+    margin-top: 1rem;
+    background-color: #ffe66d;
+    color: #3f1d63;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+
+    padding: 0.5rem 0.8rem;
+    font-size: 1.12rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    width: 7rem;
+}
+
+#home a:hover
+{
+    background-color: #ffd23f;
+    color: #2b1445;
+}
+
+#home img
+{
+    display: block;
+    width: 20rem;
+    opacity: 0.9;
+}
+
+/*fim home*/
+
+
+
+/* inicio main*/
+main
+{
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+main h3
+{
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #ffe66d;
+    margin-top: 4.4rem ;
+}
+main h4
+{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+main p
+{
+    font-size: 0.78rem;
+    opacity: 0.85;
+    margin-bottom: 1rem;
+}
+.price {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #ffe66d;
+    margin: 0.5rem 0;
+}
+main button
+{
+    background: linear-gradient(135deg, #ffe66d, #ffd23f);
+    color: #3f1d63;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+
+    padding: 0.63rem 1.5rem;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#destaques, #acai , #sorvete, #milkshake
+{
+    scroll-margin-top: 90px;
+}
+.title {
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+.title p {
+    font-size: 1.2rem;
+}
+h3::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffe66d;
+    margin: 1rem auto 0;
+    border-radius: 999px;
+}
+.produtos
+{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+
+}
+
+.caixa-prod
+{
+    background-color: #3f1d63;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 17vw;
+    min-width: 12rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.147);
+
+}
+.caixa-prod img
+{
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+/* footer */
+
+footer
+{
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p
+{
+    display: inline;
+    color:#eeeeaf;
+    font-size: 1rem;
+    margin: 0.6rem;
+    font-weight: 600;
+}
+footer img
+{
+    width: 25px;
+    height: 25px;
+}
+
+/*alterações no primeiro momento que o layout quebra*/
+
+@media(width < 59rem)
+{
+    header .logo
+    {
+        margin-left: 0.6vw;
+    }
+    header img
+    {
+        width: 2.8rem;
+        margin: 0.4rem 0;    
+    }
+    header .logo h1
+    {
+        margin: 0.3rem;
+        font-size: 1.5rem;
+    }
+    header nav 
+    {
+        margin-right: 0.6vw;
+    }
+    header nav ul 
+    {
+        gap: 2vw
+    }
+    header a 
+    {
+        font-size: 1rem;
+    }
+    #home
+    {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap: 1.5rem;
+    }
+    #home h2
+    {
+        font-size: 3.4rem;
+        text-align: center;
+    }
+    #home h2 .acai
+    {
+        font-size: 3.8rem;
+    }
+    #home p
+    {
+        width: 90%;
+        font-size: 0.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+    }
+    #home a 
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #home img
+    {
+        width: 17rem;
+        padding: 0 2rem;
+    }
+
+    .produtos
+    {
+        width: 95%;
+        gap: 12vw;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(width < 28rem)
+{
+    header
+    {
+        grid-template-columns: auto auto;
+    }
+    #menu-btn
+    {
+        display: block;
+    }
+    nav 
+    {
+        display: none;
+    }
+    #home h2 
+    {
+        font-size: 2.8rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #home h2 .acai
+    {
+        font-size: 3.2rem;
+    }
+    #home img 
+    {
+        width: 14rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media(max-width: 768px)
+{
+    header
+    {
+        display: block;
+    }
+
+    header nav
+    {
+        justify-items: center;
+    }
+
+    header nav li
+    {
+        margin: 0 2vw;
+
+    }
+    #home
+    {
+        flex-wrap: wrap-reverse;
+    }
+    
+    #home h2
+    {
+        font-size: 7vw;
+        width: 40%;
+    }
+    #home img
+    {
+        width: 38vw;
+        height: 32vw;
+    }
+    .produtos
+    {
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 390px)
+{
+    #home
+    {
+        flex-direction: column-reverse;
+        justify-items: center;
+        text-align: center;
+        margin: 1.875rem 0;
+        
+    }
+    #home h2
+    {
+        font-size: 10vw;
+        margin: 0;
+        width: 45%;
+        padding-top: 0;
+    }
+    #home img
+    {
+        width: 48vw;
+        height: 40vw;
+        margin-left: -1.875rem;
+        margin-top: 1.875rem;
+
+
+    }
+}

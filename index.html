@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorveteria da Poli</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
@@ -12,7 +12,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Playfair+Display:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,10 +21,11 @@
             <img src="img/principais/logo.png" alt="logo">
             <h1>Sorveteria da Poli</h1>
         </div>
+        <button id="menu-btn">☰</button>
         <nav>
             <ul>
                 <li><a href="#destaques">Destaques</a></li>
-                <li><a href="#acai">Açaí </a></li>
+                <li><a href="#acai">Açaís </a></li>
                 <li><a href="#sorvete">Sorvetes </a></li>
                 <li><a href="#milkshake">Milkshakes </a></li>
             </ul>
@@ -31,9 +33,15 @@
     </header>
 
     <section id="home">
-            <h2>Todo dia é dia de tomar açaí!</h2>
-            <img src="img/principais/acai-home.png" alt="">    
-   
+        <div class="texto">
+            <h2>Todo dia é dia de <span class="acai">açaí!</span></h2>
+            <p>Escolha seu açaí ou sorvete favorito e receba no conforto da sua casa!</p>
+            <a href="#destaques">Ver cardápio</a>
+        </div>
+        <div class="img">
+            <img src="img/principais/acai-fundo.png" alt=""> 
+        </div>
+               
     </section>
     
     <main>
