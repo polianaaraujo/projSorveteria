@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>Sorveteria da Poli</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
-        rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Playfair+Display:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
-        rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -35,8 +31,9 @@
             </ul>
         </nav>
     </header>
-
-    <section id="home">
+    
+    <main>
+        <section id="home">
         <div class="texto">
             <h2>Todo dia é dia de <span class="acai">açaí!</span></h2>
             <p>Escolha seu açaí ou sorvete favorito e receba no conforto da sua casa!</p>
@@ -44,17 +41,15 @@
         </div>
         <div class="img">
             <img src="img/principais/acai-fundo.png" alt=""> 
-        </div>
-               
-    </section>
-    
-    <main>
+        </div>       
+        </section>
+
         <section id="destaques"> 
-            <section class="title">
+            <div class="title">
                 <h3>Mais pedidos</h3>
                 <p>Os favoritos dos nossos clientes!</p>
 
-            </section>
+            </div>
 
             <section class="produtos">
                 <div class="caixa-prod">
@@ -62,7 +57,7 @@
                     <h4>Acaí no copo 500ml</h4>
                     <p>Monte seu açaí no copo de 500ml</p>
                     <span class="price">R$ 18,90</span>
-                    <button>Comprar</button>
+                    <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>
 
                 </div>
                 <div class="caixa-prod">
@@ -70,7 +65,7 @@
                     <h4>Acaí no copo 300ml</h4>
                     <p>Monte seu açaí no copo de 300ml</p>
                     <span class="price">R$ 16,90</span>
-                    <button>Comprar</button>
+                    <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>
                     
                 </div>
                 <div class="caixa-prod">
@@ -78,7 +73,7 @@
                     <h4>Milkshake de Ovomaltine</h4>
                     <p>Delicioso sorvete de chocolate batido com leite e Ovomaltine</p>
                     <span class="price">R$ 18,90</span>
-                    <button>Comprar</button>                       
+                    <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>                       
 
                 </div>
                 <div class="caixa-prod">
@@ -86,7 +81,7 @@
                     <h4>Vitamina de açaí</h4>
                     <p>Açaí batido com os acompanhamentos de sua preferência</p>
                     <span class="price">R$ 18,90</span>
-                    <button>Comprar</button> 
+                    <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button> 
 
                 </div>
 
@@ -94,15 +89,15 @@
 
         </section>
 
-        <h3 id ="acai">Açaí</h3>
-        <section class="produtos">
+        <h3 class="title">Açaí</h3>
+        <section id ="acai" class="produtos">
             <div class="caixa-prod">
 
                 <img src="img/acai/acai_500.jpg" alt="acaí no copo 500ml">
                 <h4>Acaí no copo 500ml</h4>
                 <p>Monte seu açaí no copo de 500ml</p>
                 <span class="price">R$ 18,90</span>
-                <button>Comprar</button>
+                <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>
                 
             </div>
             <div class="caixa-prod">
@@ -110,7 +105,7 @@
                 <h4>Acaí no copo 300ml</h4>
                 <p>Monte seu açaí no copo de 300ml</p>
                 <span class="price">R$ 16,90</span>
-                <button>Comprar</button>
+                <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>
                 
             </div>
             <div class="caixa-prod">
@@ -119,7 +114,7 @@
                 <h4>Acaí na marmita</h4>
                 <p>Monte seu açaí na marmita</p>
                 <span class="price">R$ 19,90</span>
-                <button>Comprar</button>
+                <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
             <div class="caixa-prod">
                 
@@ -127,76 +122,73 @@
                     <h4>Vitamina de açaí</h4>  
                     <p>Açaí batido com os acompanhamentos de sua preferência</p>
                     <span class="price">R$ 18,90</span>
-                    <button>Comprar</button> 
+                    <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button> 
                 </div>
         </section>
 
-        <h3 id="sorvete">Sorvetes</h3>
-        <section class="produtos">
+        <h3 class="title">Sorvetes</h3>
+        <section id="sorvete" class="produtos">
             <div class="caixa-prod">
                 <img src="img/sorvete/sorvete-chocolate.jpg" alt="sorvete de chocolate">
                 <h4>Sorvete de chocolate</h4>
                 <p>Sorvete cremoso de chocolate copo 300ml</p>
                 <span class="price">R$ 13,90</span>
-                <button>Comprar</button> 
+                <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button> 
             </div>
             <div class="caixa-prod">
                 <img src="img/sorvete/sorvete-morango.jpeg" alt="sorvete de morango">
                 <h4>Sorvete de morango</h4>
                 <p>Sorvete cremoso de morango copo 300ml</p>
                 <span class="price">R$ 13,90</span>
-                <button>Comprar</button>
+                <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
             <div class="caixa-prod">
                 <img src="img/sorvete/sorvete-flocos.jpg" alt="sorvete de flocos">
                 <h4>Sorvete de flocos</h4>
                 <p>Sorvete cremoso de flocos copo 300ml</p>
                 <span class="price">R$ 13,90</span>
-                <button>Comprar</button>
+                <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
             <div class="caixa-prod">
                     <img src="img/sorvete/sorvete-cereja.jpg" alt="sorvete de cereja">
                     <h4>Sorvete de cereja</h4>
                     <p>Sorvete cremoso de cereja copo 300ml</p>
                 <span class="price">R$ 13,90</span>
-                    <button>Comprar</button>   
+                    <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>   
                 </div>
         </section>
 
-        <h3 id="milkshake">Milkshakes</h3>
-        <section class="produtos">
+        <h3 class="title">Milkshakes</h3>
+        <section id="milkshake" class="produtos">
             <div class="caixa-prod">
                 <img src="img/milkshake/milkshake-ovomaltine.jpg" alt="milkshake de ovomaltine ">
                 <h4>Milkshake de Ovomaltine</h4>
                 <p>Delicioso sorvete de chocolate batido com leite e Ovomaltine</p>
                 <span class="price">R$ 18,90</span>
-                <button>Comprar</button>   
+                <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>   
             </div>
             <div class="caixa-prod">
                 <img src="img/milkshake/milkshake-morango.jpg" alt="milkshake de morango ">
                 <h4>Milkshake de morango</h4>
                 <p>Delicioso sorvete de morango batido com leite </p>
                 <span class="price">R$ 18,90</span>
-                <button>Comprar</button> 
+                <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button> 
             </div>
             <div class="caixa-prod">
                 <img src="img/milkshake/milkshake-oreo.jpg" alt="milkshake de oreo ">
                 <h4>Milkshake de Oreo</h4>
                 <p>Delicioso sorvete de creme batido com leite e Oreo</p>
                 <span class="price">R$ 18,90</span>
-                <button>Comprar</button>
+                <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
             <div class="caixa-prod">
                 <img src="img/milkshake/milkshake-coco.png" alt="milkshake de coco ">
                 <h4>Milkshake de coco</h4>
                 <p>Delicioso sorvete de creme batido com leite e coco</p>
                 <span class="price">R$ 18,90</span>
-                <button>Comprar</button>
+                <button class="btn-pedido" onclick="fazerPedido()"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
-        </section>
-            
-        <section class="fale-conosco"></section>
-    
+        </section>    
     
     </main>
     
